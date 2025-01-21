@@ -1,0 +1,2 @@
+In Non-Static methods we have 'direct' access to both Static and Non-Static variables but Methods can be access 'indirectly' using class Name
+
