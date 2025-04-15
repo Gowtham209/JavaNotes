@@ -40,6 +40,33 @@ This can be solved by using Volatile keyword this Makes all the Threads to Verif
     *   synchronized Keyword Makes Only Single Thread at a Time to Access this Method to Eliminates Collision
     *   synchronzed used when a multiple lines of code or method that needed to synchronized(Thread safe)
     *NOTE:   synchronized provide Lock so that it is slow  
+
+	Monitor Object: synchronized( monitor_object ){ }
+		When you use a synchronized block in Java, you need to specify an object to act as the monitor. The monitor object is the entity on which the lock is acquired.
+    	
+    	 Different Types of Monitor Objects
+		1)this (Current Instance)
+			Usage: When you want to synchronize instance methods or blocks within an instance of a class.
+			Purpose: Ensures that only one thread can execute the synchronized block for a particular instance of the class at a time.
+   		NOTE:
+		Scope: When you use "this" as the monitor object, you are locking the entire instance of the class. This means that any other synchronized block or method in the 
+  			same instance that also uses this as the monitor will be blocked until the lock is released.
+		Effect: If multiple synchronized methods or blocks use this, they will all be mutually exclusive, meaning only one can execute at a time per instance.
+
+  		2)ClassName.class (Class-Level) Lock
+    		 	 Usage: When you want to synchronize static methods or blocks, or when you need to synchronize access across all instances of a class.
+			 Purpose: Ensures that only one thread can execute the synchronized block for the entire class, regardless of the instance.
+      		NOTE:
+      		Scope: When you use Example.class as the monitor object, you are locking the entire class. This means that any synchronized block or method that uses ClassName.class as the monitor will be blocked until the lock is released, regardless of the instance.
+		Effect: This is useful for synchronizing static methods or when you want to ensure that only one thread can execute a block of code across all instances of the class.
+
+    		3)Custom Lock Object (private final Object lock = new Object())
+			Usage: When you want more fine-grained control over synchronization, or when you want to synchronize only specific parts of a class without locking the entire instance or class.
+			Purpose: Provides flexibility in synchronization, allowing you to lock only specific resources or operations.
+      		NOTE:
+		Scope: When you use a custom lock object, you are locking only the specific block of code that uses that lock object. Other synchronized blocks or methods that use different lock objects can execute concurrently.
+		Effect: This allows for more fine-grained control over synchronization. You can have multiple independent locks within the same class, each controlling access to different resources or operations.
+   
     */
 
     /*
