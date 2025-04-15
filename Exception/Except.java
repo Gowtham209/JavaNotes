@@ -58,7 +58,11 @@ public class Except {
 
 //      !! Note:
 /*
-        When we declare a Variable within Try Block the Scope of that Variable is CAN'T be used in Catch / Finally BLOCK
+      ###  Variables declared "outside the try-catch block" are "accessible within both the try and catch blocks".
+
+      ###  When we declare a Variable "within Try Block" the Scope of that Variable is "CAN'T be used in Catch / Finally BLOCK".
+        
+      ###  Variables declared inside the try block are not accessible in the catch block or outside the try block.
 
 */        
 
