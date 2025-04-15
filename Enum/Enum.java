@@ -71,9 +71,9 @@ enum Day{
         return d.dayDescription;
     }
 
-    public boolean isWeekEnd(Day d)
+    public boolean isWeekEnd()
     {
-        return (d.dayType).equals("weekend");
+        return (this.dayType).equals("weekend");
     }
     public void totalWorkHours(Day d)
     {
@@ -124,7 +124,7 @@ public class Enum {
         System.out.println(day);   // Prints CONSTANT Name Iteslf Here MONDAY
         System.out.println(day.getDayType(day));
         System.out.println(day.getDayDescription(day));
-        System.out.println("is today a week end:"+day.isWeekEnd(day));
+        System.out.println("is today a week end:"+day.isWeekEnd());
         day.totalWorkHours(day);
         day.getSwitch(day);
         System.err.println(day==Day.SATURDAY);
