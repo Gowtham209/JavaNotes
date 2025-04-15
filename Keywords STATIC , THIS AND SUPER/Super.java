@@ -4,6 +4,9 @@
  Child class CONSTRUCTOR should have only ONE Super call within Child CONSTRUCTOR(in 1st Line).
  * Super keyword cannot able to ACCESS Private Methods and Variables
  * Super Keyword cannot be used inside STATIC Methods
+ IMPORTANT:
+ Super keyword in Java is specifically used to refer to the fields and methods of the parent (superclass) class, not the current child (subclass) class.
+Even if the Child Class Override the Methods of Parent Still Calls the Parent Methods and Fields
  */
 class Parent{
     static public int a;
