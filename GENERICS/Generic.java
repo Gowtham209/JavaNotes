@@ -15,6 +15,7 @@ Class_Name <T extends Number & Comparable & Sample_CLass>
  '''Type inference''' in Java helps to reduce boilerplate code by allowing the omission of explicit type 
  declarations in certain situations. It improves code readability and reduces the verbosity of code 
  while maintaining strong static type checking at compile-time.
+ '?' This is WILD Card Can be ANY type
  */
 import java.net.SocketPermission;
 
@@ -43,6 +44,24 @@ class Bounded <T extends Number & Comparable >
         return x;
     }
 }
+/*
+
+Understanding the Bounded Type Parameter
+<T extends Number & Comparable>:
+     This syntax specifies that the type parameter T must satisfy two conditions:
+        *T must be a subclass of Number.
+        *T must implement the Comparable interface.
+
+IMPORTANT:
+Syntax for Multiple Bounds
+
+The syntax for specifying multiple bounds is:
+<T extends Class & Interface1 & Interface2 & ...>
+
+Class: The first bound must be a class or another type parameter.
+Interfaces: Any additional bounds must be interfaces.
+
+*/
 //Generic with Interface
 interface Int<T>
 {
