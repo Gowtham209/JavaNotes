@@ -121,7 +121,7 @@ public class Enum {
     public static void main(String[] args) {
         // Accessing the Enum object(Constants)
         Day day=Day.MONDAY;
-        System.out.println(day);
+        System.out.println(day);   // Prints CONSTANT Name Iteslf Here MONDAY
         System.out.println(day.getDayType(day));
         System.out.println(day.getDayDescription(day));
         System.out.println("is today a week end:"+day.isWeekEnd(day));
