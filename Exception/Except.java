@@ -12,16 +12,17 @@ Exception:
 
 Checked Exception:
     This Exceptions are found in JDK Level itself which indeed means in Java Checked Exceptions are 
-already defined whenever we use File related , SQL related , Class not found etc.. which Exception may Happen while 
+already defined whenever we use File related[FileNotFoundException] , SQL related[SQLException] , Class not found [ClassNotFoundException] etc.. which Exception may Happen while 
 working with these.So, Java ProActively Compules the Developer to use Try and Catch along with Checked Exception
 
 UnChecked Exception:
-    This Exceptions are happen while the Program runs which means these can be found by JVM. 
+    This Exceptions are happen while the Program runs which means these CAN'T be found by JVM. 
 Examples RunTimeException's Child Exceptions like ArithMathicException,NullPointerException,InputMisMatchException etc...
 These exceptions are CAN't be Found at Compile Time so Java doesn't suggest to Try and Catch
 BUT Developer Should ProActively to use Try and Catch in cases of Some unknown Exception may Happen
 
-
+Checked Exceptions: All compile-time exceptions are checked exceptions, meaning they must be handled or declared.
+Unchecked Exceptions: All runtime exceptions are unchecked exceptions, meaning they do not need to be explicitly handled or declared.
 
 Error:
     Errors that are "not meant to be caught by applications".They are usually thrown by the JVM (Java Virtual Machine) and are often related to system failures.
