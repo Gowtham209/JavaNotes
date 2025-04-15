@@ -26,7 +26,8 @@ both Object for Non-Static,Static fields and Methods  and Class Name itself for 
  *  Or we can Explicitly use "default" keyword also 
  *  Default's  Visisble and Accessible is limited to Only within the Folder[Package],own File. Even if we Import we CAN'T Access the
  * default fields and methods of a class
- * 
+ IMPORTANT:
+ WHEN if Extends 'Default' class from Different Pacakege we cannot access its Fields & Methods
  * 
  * Protected
  *  Protected is Little Restictive
