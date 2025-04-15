@@ -1,2 +1,4 @@
-In Non-Static methods we have 'direct' access to both Static and Non-Static variables but Methods can be access 'indirectly' using class Name
+FROM Non-Static methods we can have 'direct' access to both Static and Non-Static Fields & Methods using Direct Static Method and Variable Name or with 'this' or Class Name
+BUT
+FROM Static methods we CAN'T ACCESS Non-Static Methods and Fields Because Non_static Fields & Methods Belongs to Instance and If Needed to Access then a Temprory Object Needed to be Created
 
