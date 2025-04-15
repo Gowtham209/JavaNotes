@@ -17,6 +17,16 @@ NOTE::
 Like run() method We cannot "OverRide the start() method of the Thread class because the start() method is final. 
 This means that it cannot be modified or overridden in any subclass. 
 
+IMPORTANT:
+start() Method: Cannot be overridden Because it is FINAL Method and is used to "initiate a new thread of execution".
+run() Method: Can be overridden or implemented to define the task that the thread will execute.
+
+EVEN if we use Thread Class extends We need to OVERRIDE run() method to DEFINE the CORE process the New Thread Going to Do
+
+Use start(): To execute the run() method in a New Thread, ALWAYS Call "start()".
+Do Not Use run() Directly: Calling run() directly "Will NOT create a New Thread" it will execute the method in the current thread.
+By using start(), you ensure that your overridden run() method executes in a separate thread, allowing for concurrent execution with other threads.
+
  */
 class ParallelMultiThread extends Thread    {
 
