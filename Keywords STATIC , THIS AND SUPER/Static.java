@@ -3,6 +3,9 @@
  * Static Keyword Variables and Methods means they are CLASS Level Variables and Methods 
  * Static Variables and Methods can be Accessed with Class Name itself without Object
  * Non-Static Variables and Methods are belongs to Object  
+ IMPORTANT:
+ Non-Static Methods: Can access both static and non-static members directly or using this or the class name.
+ Static Methods: Can only access static members directly or using the class name. To access non-static members, an instance of the class is required.
  */
 class A{
 /* Below Method and Variable are CLASS Level things any Changes will Have Same 
