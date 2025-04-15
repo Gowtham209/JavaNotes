@@ -5,6 +5,8 @@
  * this keyword is used to refer constructors of same class
  * this keyword is used to refer Variables and Methods of same class
  * this keyword should not be specified inside STATIC Methods
+ IMPORTANT:
+     this Also Used to ACCESS Fields and Methods of Parent Class
  */
 class A{
     int a;
