@@ -1,0 +1,94 @@
+1)LinkedList
+2)ArrayList
+3)Vector
+4)Stack
+
+1)LinkedList
+	LinkedList is list that Use Nodes
+
+2)ArrayList
+	ArrayList does same kind of actions like LinkedList but the Main difference is the ArrayList uses "Array"
+
+3)Vector
+	Vector is SAME as ArrayList main Difference is Vector is Synchroniced so its is Thread Safe
+Note: If Same VectorList is simultaneously used other Parts of Program the each Part will wait until current Part complete its work in the VectorList
+
+4)Stack
+	Internally Stack may use any one LinkedList or Array
+
+
+*Note:
+list1.addAll(list2)
+This methods all the Values in "list2" into "list1" without any Iteration
+
+stack1.addAll(stack2)
+This methods all the Values in "stack2" into "stack1" without any Iteration
+
+
+Creating a List
+LinkedList<Integer> linkedList = new LinkedList<>();
+ArrayList<Integer> arrayList = new ArrayList<>();
+Vector<String> vectorList = new Vector<>();
+!Stack<Integer> stack=new Stack<>();
+
+Adding Values
+linkedList.add(87)
+arrayList.add(712)
+vectorList.add("abc")
+!stack.push(987)
+
+Adding First and Last
+linkedList.addFirst(87)  and linkedList.addLast(87)   
+arrayList.add(0,67)      and arrayList.add(712)
+vectorList.add(0,"nine") and vectorList.add("ab") 
+!stack.push(97)          and !stack has NO Last First
+
+Updating - Index,Value
+linkedList.set(0,77)
+arrayList.set(7,22)
+vectorList.set(0,"bc")
+! stack does not Support
+
+Get - Index
+linkedList.get(0)
+arrayList.get(1)
+vectorList.get(0)
+! stack does not Support
+
+Remove - Index or Value
+linkedList.remove(0) or linkedList.remove(new Integer(23)) 
+arrayList.remove(1) or  arrayList.remove(new Integer(12))
+vectorList.remove(0) or vectorList.remove(new Integer(450))
+ // Because AutoBoxing causes the Added and Removing of same value but Different reference due to address so like this ONLY we can Remove Values Directly From the LIST
+
+
+list.remove() will remove First element of a List
+!stack.pop() will Remove Last entered Element of a List
+
+Contains - Return Boolean
+linkedList.contains(87)
+arrayList.contains(712)
+vectorList.contains("abc")
+! stack does not Support
+
+Size
+linkedList.size()
+arrayList.size()
+vectorList.size()
+!stack.size()
+
+Clear
+linkedList.clear()
+arrayList.clear()
+vectorList.clear()
+!stack.clear()
+
+Iteration
+
+for(int v: linkedList/arrayList/vectorList/stack)
+{
+
+}
+
+
+

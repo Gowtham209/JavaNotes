@@ -1,0 +1,60 @@
+1)HashSet - Maintain unique elements and DOES not maintain the order of insertion
+2)LinkedHashSet - It maintain Insertion order
+3)TreeSet - It maintain elements in Sorted Order
+
+*Note:
+set1.addAll(set2)
+This methods all the Values in "set2" into "set1" without any Iteration
+
+Creating a Set
+HashSet<Integer> hashset = new HashSet<>();
+LinkedHashSet<Integer> linkedhashset = new LinkedHashSet<>();
+TreeSet<Integer> treeset = new TreeSet<>();
+
+
+Adding Values
+hashset.add(87)
+linkedhashset.add(712)
+treeset.add(987)
+
+Get
+ONLY by Iterating over the Set
+treeset.first()
+treeset.last()
+
+Remove - Value
+hashset.remove(32)
+linkedhashset.remove(187) 
+treeset.remove(70) 
+
+
+Contains - Return Boolean
+hashset.contains(87)
+linkedhashset.contains(712)
+treeset.contains("abc")
+
+Size
+hashset.size()
+linkedhashset.size()
+treeset.size()
+     
+Clear
+hashset.clear()
+linkedhashset.clear()
+treeset.clear()
+
+
+Iteration
+
+for(int v: hashset/linkedhashset/treeset)
+{
+
+}
+
+Iterator<String> iterator = treeSet.iterator();
+while (iterator.hasNext())
+ {
+    System.out.println(iterator.next());
+ }
+
+

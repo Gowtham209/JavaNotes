@@ -1,0 +1,44 @@
+1)Priority Queue  !!! Supports Comparator in Constructor
+2)ArrayDeque
+
+*Note:
+que1.addAll(que2)
+This methods all the Values in "que2" into "que1" without any Iteration
+
+Creating Queue
+PriorityQueue<Integer> prique = new PriorityQueue<>();
+ArrayDeque<Integer> arraydeq = new ArrayDeque<>();
+
+Adding Queue
+prique.add(19)
+arraydeq.add(78)   arraydeq.addFirst(78)   arraydeq.addLast(78)    
+
+Contains
+prique.contains(19)
+arraydeq.contains(78)
+
+Get
+! PriorityQueue Does not support getting elements by index
+arraydeq.get(0)
+
+Remove - Boolean
+prique.remove(123)  prique.poll()  prique.remove() return 1st value
+arraydeq.remove(0)  arraydeq.removeFirst()  arraydeq.removeLast() 
+
+Peek
+prique.peek()
+arraydeq.peek()   arraydeq.peekFirst()  arraydeq.peekLast()  
+
+Clear
+prique.clear()
+arraydeq.clear()   
+
+Size
+prique.size()
+arraydeq.size()   
+
+Iteration
+for(int a: prique/arraydeq)
+{
+
+}

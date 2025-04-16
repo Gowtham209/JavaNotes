@@ -1,0 +1,63 @@
+Map
+1)HashMap
+2)TreeMap   !!! Supports Comparator in Constructor
+3)LinkedHashMap
+4)HashTable
+
+1)HashMap-This does not maintain Order of Insertion so if a change is happen then the order will be changed
+          Constant Time to do basic actions like get(),put(),remove() 
+
+2)TreeMap-This sort the values and based one the key the order is maintained
+          O(logn) Time to do basic actions like get(),put(),remove() 
+
+3)LinkedHashMap-This Maintain Order of Insertion
+          Constant Time to do basic actions like get(),put(),remove() 
+
+4)HashTable
+	This is Similar to HashMap but HashTable is Synchronised
+
+*Note:
+map1.putAll(map2)
+This methods all the Values in "map2" into "map1" without any Iteration
+
+Create
+HashMap<Integer,Integer> hashmap = new HashMap<>();
+HashTable<Integer,Integer> hashtable = new HashTable<>();
+LinkedHashMap<Integer,Integer> linkedhashmap = new LinkedHashMap<>();
+TreeMap<Integer,Integer> treemap= new TreeMap<>();
+
+Add values
+hashmap.put(11,1);
+hashtable.put(12,2);
+linkedhashmap.put(23,4);
+treemap.put(34,2);
+
+Update
+hashmap.put(11,2);
+hashtable.put(12,1);
+linkedhashmap.put(23,2);
+treemap.put(34,1);
+
+Get
+hashmap.get(key);
+hashtable.get(key);
+linkedhashmap.get(key);
+treemap.get(key);
+
+Contains
+hashmap.containsKey(key);
+linkedhashmap.containsKey(key);
+hashtable.containsKey(key);
+treemap.containsKey(key);
+
+Size
+hashmap.size();
+hashtable.size();
+linkedhashmap.size();
+treemap.size();
+
+Remove
+hashmap.remove(key);
+hashtable.remove(key);
+linkedhashmap.remove(key);
+treemap.remove(key);
