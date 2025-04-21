@@ -7,21 +7,21 @@ import java.util.*;
                 1 Varible 
                 2 Method 
                 3 Class 
-                4" Method PARAMETER " 
+                4 " Method PARAMETER " 
 
 
         1. Variable
                 Based on Data Type[Primitive / NonPrimitive] the Variable Behave differently when it is declared as "final".
             Primitive: (Eg: int , float , double)
-                Once a Value Assigned to Primitive[DataType] Variable Can't be Changed/Modified
+                Once a Value Assigned to Primitive[DataType] Variable VALUE Can't be Changed/Modified
             
             Non Primitive: (Eg: Integer , Long , CustomClass , Collection DataTypes)
-                Once a Reference Assigned to NonPrimitive[DataType] Variable ATTRIBUTE of the Variable can be Modified/Changed
+                Once a Reference Assigned to NonPrimitive[DataType] Variable , ATTRIBUTE of that Variable can be Modified/Changed
             BUT the Reference Can't be Changed/Modified
             
             IMPORTANT:
                 * String is Non-Primitive DataType But Still "final" will throw Error when Modified Because Remember when String variable is Modified JAVA will Give New Reference Each Time
-                ##### If we use String BuildIn functions to manipulate Value "final" won't Throw ERROR at the SAMETIME the Change/Modification won't be REFLECT in the End
+                ##### If we use String BuildIn functions to manipulate "final" Variable's Value ,JAVA won't Throw ERROR at the SAMETIME the Change/Modification won't be REFLECT in the End
                 
                 * StringBuilder & StringBuffer Behaves Same as a NonPrimitive so Modification Doesn't Create new Reference.
             
@@ -32,12 +32,12 @@ import java.util.*;
         3. Class
              A class as final, the only restriction is that it cannot be extended (inherited). However, you can still:
                 Create objects of the final class and use its methods.
-                Call its static methods and access static variables (modifiable unless they are also marked final).
+                Calling its static methods and access static variables (modifiable unless they are also marked final).
                 Use its instance methods and variables as usual.
             Instanciate it in other classes and work with its functionality.
 
         4. Method PARAMETER
-            When a method parameter is declared final, its value cannot be changed inside the method. This is useful when you want to pass a value to a method, but you don't want its value to be changed by the method.
+            When a method parameter is declared final, its value cannot be changed inside THAT Method. This is useful when you want to pass a value to a method, but you don't want its value to be changed by the method.
 
             Example:
 
