@@ -29,6 +29,11 @@ ADVANTAGES of Primitive Data Type:
 Autoboxing/Unboxing:
     Java automatically converts between primitives and their wrapper classes
     Example: Integer i = 42; (autoboxing), int j = i; (unboxing)
+    IMPORTANT:
+            * AutoBoxing and AutoUnBoxing are More usefull While Working With COLLECTIONS[accepts only Wrapper Class]
+            * While the Input Might be NULL in that case WrapperClasses are More Usefull Along with these Situation 
+AutoBoxing and AutoUnBoxing plays Crucial Role To Eliminate BOILER Plate codes
+
 Memory Efficiency:
     Primitives are more memory-efficient than their wrapper classes
     Primitives are stored directly on the stack when declared as local variables
