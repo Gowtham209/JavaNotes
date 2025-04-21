@@ -45,7 +45,7 @@ Performance:
     Unlike primitive data types, non-primitive data types in Java don't have fixed memory sizes defined by the language specification.
 Instead, they are objects that contain references to memory locations
 
-#   Ususal Objects ,StringBuilder and  Wrapper Classes are Non Primitive DataType Even the Collections all are Non Primitive Data Type 
+#   Usual Objects ,StringBuilder and  Wrapper Classes are Non Primitive DataType Even the Collections all are Non Primitive Data Type 
 Since in the End we are Using By creating Object to Each Collection Data Structure
 #    Non Primitive Data Type Store Reference[Memory Address] of Object
 
