@@ -12,7 +12,7 @@ This Class_Variable() implements Interface_variable
   for Abstract class and Interface directly 
  * After JAVA 8 Interface are Allowed to have Method Definition for "default" access specifier and "static" named Methods
  * Inside Interface STATIC Method BODY can be Defined
- * Interface's STATIC Method can't be accessed by the Class that Implements the Interface
+ * Interface's STATIC Method can't be accessed by the Class that Implements the Interface ONLY that INTERFACE can Access
  * But by Specifing "default" Method ACCESS Modifier Body can be Defined Inside Interface 
  * Interface Cannot Have CONSTRUCTOR 
  * All the Methods inside Interface are "Public Abstract" by Default
