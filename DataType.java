@@ -17,6 +17,7 @@ Primitive Data Types are "FIXED Data Size" memory Allocation.
 #    Primitive Data Type Store ACTUAL Value
 
     byte  => 1 Byte[8 bits] & Range -2^7 to 2^7-1
+    boolean => 1 Byte[8 bits] & which is ONLY 0 or 1 
     short => 2 Byte[16 bits] & Range -2^15 to 2^15-1
     char  => 2 Byte[16 bits] & Range 0 to 2^16-1 ***** Range is Different from Others
     float => 4 Byte[32 bits] & Range 3.4e−038 to 3.4e+038   Format: 1 bit for sign, 8 bits for exponent, 23 bits for mantissa
