@@ -5,7 +5,7 @@ import java.util.*;
 
         Stack is a subclass of Vector, meaning it inherits all the properties and methods of Vector.
         Stack and Vector in Java are thread-safe because they use "Synchronized methods" to ensure safe access in a multi-threaded environment.
-        Vector is a Part of LIST Interface ao Stack also Part of LIST Interface
+        Vector is a Part of LIST Interface so Stack also Part of LIST Interface
 
         Methods:
         Vector:
