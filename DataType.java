@@ -56,7 +56,7 @@ Mutable vs Immutable Both Primitive & Non Primitive
 
 All the Primitive Data Types are Mutable. Values can been Manipulated But No New variables are created
 
-Where Non Primitive Expecet String , Wrapper classes Are Immutable [Value can be Changed but for Each change a New Reference is been created WASTES Resources]
+Where Non Primitive Except String Wrapper class Are Immutable [Value can be Changed but for Each change a New Reference is been created (WASTES Resources) ]
 Where as Other Non Primitive Data Types are Mutable and No new Reference are Created
 
 
