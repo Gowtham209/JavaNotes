@@ -3,7 +3,7 @@ public class CustLinkedList<T>
     private Node head;
     private Node tail;
     private int size=0;
-    LinkedList()
+    CustLinkedList()
     {
         size=0;
     }
